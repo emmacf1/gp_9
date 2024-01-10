@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --amarillo: #FFF593;
+            --verde: #3DB236;
+            --marron: #A06F07;
+
+        }
+        body{
+            background-color: #FFF593;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(33, 1fr);
+        }
+        #nom, #insta{
+            background-color: white-space;
+
+        }
+        #nom{ 
+            background-color: white;
+
+        }
+        #insta{
+            grid-row: 2/2;
+            grid-column: 1/2;
+            background-color: white;
+        }
+        #tablero{
+            background-color: var(--verde);
+            grid-column: 4/8;
+            grid-row: 9/14 ;
+        }
+        #pata1{
+            background-color: var(--verde);
+            grid-column: 4/5;
+            grid-row: 14/25;
+        }
+        #pata2{
+            background-color: var(--verde);
+            grid-column: 7/8;
+            grid-row: 14/25;
+        }
+        #borde{
+            background-color: var(--marron);
+            grid-column: 4/8;
+            grid-row: 14/15 ;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="nom"><a href="#">Emma Caravaca</a></div>
+        <div id="insta"><a href="https://www.instagram.com/emmaa_yeemaa/?hl=es">@emmaa_yeemaa</a></div>
+        <div id="tablero"></div>
+        <div id="pata1"></div>
+        <div id="pata2"></div>
+        <div id="borde"></div>
+    </div>
+</body>
+</html>
